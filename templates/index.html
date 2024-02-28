@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Vijay Karnatak</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Mr. Vijay Karnatak</h1>           
+            <h4>Teacher-Administrator</h4>          
+        </div> 
+        
+             
+    </header>
+    <div class="outer-nav">
+        <div class="navbar">
+            <a href="">HOME</a>
+            <a href="/education">EDUCATION</a>
+            <a href="">CONTACT</a>
+            <!-- <a href="">PATENTS</a> -->
+            <a id ="admin-button" href="#">ADMIN</a>
+        </div>
+    </div>
+    <div class="about-outer-heading">
+        <p class="about-heading">About Vijay Karnatak</p>
+    </div>
+    <div class="profile-photo">
+        <img src="/static/header_bg1.jpg" alt="">
+    </div>
+    <div class="about-outer">
+        <div class="about-section">
+            <h4>Mr. Vijay Karnatak</h4>
+            <br>
+                <p>is an Assistant Professor in the Department of Computer Science & Engineering at THDC Institute of Hydropower Engineering and Technology, Tehri, Uttarakhand. He is Pursuing Ph.D. in Computer Science & Engineering from Graphic Era Deemed to be University, holding a background of M.Tech. and B.Tech. from Uttarakhand Technical University.
+                    <br><br>His expertise lies in Cloud Computing & Machine Learning and IoT, demonstrated through 10+ research papers in prestigious conferences and journals. He also holds three Indian Patents in Machine Learning.
+                    He actively participates and serves as a reviewer for renowned journals.
+                    In education, he contributes through Faculty Development Programs and expert talks at prestigious universities. His dedication to academia earned him the "Best Faculty Award" at the GECL-2022.
+                    With a career spanning 5.5+ years, Mr. Vijay Karnatak has worked at various institutions, including MIET, Glocal University, Chandigarh University and Coer University.
+                    <br><br>
+                    He is an active member of professional organizations likeI2OR. Mr. Vijay Karnatak is a distinguished figure in the field of computer science and engineering.
+                </p>
+        </div>
+    </div>
+    
+
+    <div class="recently-updated-box">
+        <div class="recently-updated">
+            <h2>Recently Updated</h2>
+            <div class="blogs">
+                <!-- Blog items will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+   
+
+    <section>
+        <button class="button-89" onclick="toggleOverlay()" type="button">Add Blog</button>
+
+        <!-- Blog Form Overlay (Initially hidden) -->
+        <div id="overlay" class="overlay">
+            <div class="blog-form">
+                <form onsubmit="submitBlog(event)" enctype="multipart/form-data">
+                    <label for="blogTitle">Title:</label><br>
+                    <input type="text" id="blogTitle" name="blogTitle"><br>
+                    <label for="blogContent">Content:</label><br>
+                    <textarea id="blogContent" name="blogContent"></textarea><br>
+                    <label for="blogFile">Attach File:</label><br>
+                    <input type="file" id="blogFile" name="blogFile"><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="more-details-panel">
+            
+            <div class="more-details">   
+                <div>
+                    <h4>Contact Details</h4>
+                    <p>Email: Vijay.karnatak92@gmail.com</p>
+                    <p>Phone no. - 7417866520, 6399777707</p>
+                </div>
+                <div>
+                    <h4>Current Job</h4>
+                    <p>Assistant Professor at THDC IHET</p>
+                </div>
+                <div>
+                    <h4>Social Media</h4>
+                    <p>Instagram: vijay_karnatak</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-outer">
+            <div class="copyright">COPYRIGHT OF MR. VIJAY KARNATAK</div>
+        </div>
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
